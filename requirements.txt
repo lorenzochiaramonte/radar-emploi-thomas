@@ -1,0 +1,2 @@
+# Dépendances minimales pour le radar emploi
+requests>=2.31.0
