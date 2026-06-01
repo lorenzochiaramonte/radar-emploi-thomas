@@ -1,0 +1,97 @@
+name: radar-emploi-quotidien
+ 
+on:
+  # Tous les matins à 7h00 heure de Paris (5h UTC en été, 6h UTC en hiver)
+  schedule:
+    - cron: '0 5 * * *'
+ 
+  # Bouton "Run workflow" dans l'onglet Actions pour tester à la demande
+  workflow_dispatch:
+ 
+permissions:
+  contents: write     # pour committer l'historique
+  pages: write        # pour publier le dashboard
+  id-token: write     # idem (oidc)
+ 
+jobs:
+  run-radar:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+ 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+ 
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+ 
+      - name: Exécuter le radar
+        env:
+          # France Travail
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+          # Email
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_DESTINATAIRE: ${{ secrets.EMAIL_DESTINATAIRE }}
+          # IA pour génération candidatures
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Telegram
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # URL de la page web GitHub Pages (optionnel)
+          PAGES_URL: ${{ vars.PAGES_URL }}
+        run: python radar.py
+ 
+      - name: Sauvegarder le digest HTML en artefact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: digest-${{ github.run_number }}
+          path: data/digest.html
+          retention-days: 14
+ 
+      - name: Committer l'historique mis à jour
+        if: success()
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add data/historique.json docs/index.html 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Aucun changement à committer"
+          else
+            git commit -m "chore: maj historique + dashboard [skip ci]"
+            git push
+          fi
+ 
+  deploy-pages:
+    needs: run-radar
+    runs-on: ubuntu-latest
+    if: success()
+ 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+ 
+    steps:
+      - name: Checkout (avec dernière version du dashboard)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+ 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+ 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/
+ 
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
