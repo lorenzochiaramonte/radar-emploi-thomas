@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>01/06/2026 à 12:47</strong></p>
+  <p>Dernière mise à jour : <strong>02/06/2026 à 09:00</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,14 +130,323 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 01/06/2026 à 12:47<br>
+  Radar emploi v3 · GitHub Actions · 02/06/2026 à 09:00<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [];
+const OFFRES = [
+  {
+    "titre": "Cariste (H/F)",
+    "entreprise": "Start People",
+    "ville": "69 - Montagny",
+    "code_postal": "69700",
+    "type_contrat": "Intérim - 18 Mois",
+    "description": "Devenir intérimaire chez Start People, c'est bénéficier de nombreux avantages :\n\n-Une prime parrainage de 100€ si vous aidez l'un de vos amis à être employé par Start People en intérim, CDD ou CDI\n-Une prime de participation aux bénéfices en fonction de vos heures travaillées\n-Des offres de formation pour vous faire monter en compétences et évoluer dans votre carrière\n-Un Comité Social et Economique qui vous propose de nombreux avantages pour vos événements familiaux, activités sportives, vacances...\n-Un accompagnement par le FASTT dès votre 1ère heure travaillée (logement, mobilité, garde d'e",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/2791342",
+    "source": "francetravail",
+    "score": 12,
+    "distance_km": 0.0,
+    "tags": [
+      "+caces 3",
+      "+cariste",
+      "+préparateur de commandes",
+      "+logistique",
+      "+manutention",
+      "+cdi"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de Cariste (H/F) chez Start People.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 69 - Montagny, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-05-20T04:06:50.000Z"
+  },
+  {
+    "titre": "Cariste Préparateur de Commandes (H/F)",
+    "entreprise": "PIEGAY FRERES TRANSPORTS",
+    "ville": "69 - ST SYMPHORIEN D OZON",
+    "code_postal": "69360",
+    "type_contrat": "CDI",
+    "description": "Dans le cadre de notre développement, nous sommes à la recherche d'un Agent / une Agente de Quai Cariste. \n\n** Dans le cadre de vos missions, vous devrez effectuer des chargements et déchargements de camions en fonction des arrivages : \n- Chargement/déchargement de véhicules\n- Pointage\n- Préparation de commandes\n\n* Activité logistique et transport :\n- Etiquetage et scan des palettes\n\n** Profil : \n- Connaissance en informatique souhaitée\n- Etre titulaire du CACES 1 et 3\n- Expérience dans le transport indispensable\n- Etre polyvalent, rigoureux, ponctuel et autonome\n\n* Poste : \n- Horaires de jour",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208SZNM",
+    "source": "francetravail",
+    "score": 10,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+préparateur de commandes",
+      "+préparation de commandes",
+      "+logistique",
+      "+cdi"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de Cariste Préparateur de Commandes (H/F) chez PIEGAY FRERES TRANSPORTS.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 69 - ST SYMPHORIEN D OZON, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-05-26T15:50:53.932Z"
+  },
+  {
+    "titre": "Magasinier / Préparateur de commandes (H/F)",
+    "entreprise": "CHARLOTTE RANNAUD RECRUTEMENT",
+    "ville": "38 - Vienne",
+    "code_postal": "38200",
+    "type_contrat": "CDI",
+    "description": "Vous aimez les environnements dynamiques, le travail concret et les journées qui ne se ressemblent pas ?\n\nActeur en plein développement dans l'univers du carrelage et de l'aménagement, cette entreprise s'impose comme une référence locale grâce à la qualité de ses produits, son sens du service et l'énergie de ses équipes.\n\nDans un contexte de croissance, elle renforce son organisation logistique et recrute un-e Préparateur-rice de Commandes / Magasinier.\n\nPourquoi rejoindre cette entreprise ?\n\nUne structure en forte croissance\nUne équipe dynamique, engagée et ambitieuse\nUn environnement de trav",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208QPLT",
+    "source": "francetravail",
+    "score": 10,
+    "distance_km": 0.0,
+    "tags": [
+      "+caces 3",
+      "+préparateur de commandes",
+      "+magasinier",
+      "+logistique",
+      "+cdi"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de Magasinier / Préparateur de commandes (H/F) chez CHARLOTTE RANNAUD RECRUTEMENT.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 38 - Vienne, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-05-22T11:16:49.092Z"
+  },
+  {
+    "titre": "PRÉPARATEUR DE COMMANDES (H/F)",
+    "entreprise": "Non précisé",
+    "ville": "69 - Montagny",
+    "code_postal": "69700",
+    "type_contrat": "Intérim - 1 Mois",
+    "description": "Présentation de l'entreprise Située à Montagny, cette entreprise est un leader reconnu dans la conception et la fabrication de solutions industrielles. Alliant innovation technique et robustesse, elle accompagne les plus grands acteurs de la logistique et de l'industrie en France. Intégrer cette structure, c'est rejoindre un environnement industriel dynamique où la qualité du produit fini et la satisfaction client sont les priorités absolues.Descriptif du poste Dans le cadre d'un renfort logistique, nous recherchons un Préparateur de commandes / Cariste (F/H). Au cœur de l'entrepôt de stockage",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3110208",
+    "source": "francetravail",
+    "score": 9,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+préparateur de commandes",
+      "+préparation de commandes",
+      "+logistique",
+      "+manutention"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de PRÉPARATEUR DE COMMANDES (H/F) chez Non précisé.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 69 - Montagny, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-05-28T05:00:21.000Z"
+  },
+  {
+    "titre": "Préparateur de commandes (H/F)",
+    "entreprise": "Non précisé",
+    "ville": "38 - Reventin-Vaugris",
+    "code_postal": "38121",
+    "type_contrat": "Intérim - 1 Mois",
+    "description": "L'agence ERGOS ROUSSILLON recherche un préparateur de commande (H/F) :Vous travaillerez au sein d'une entreprise, située à Reventin-Vaugris.Vos missions seront :- Suivre et préparer les commandes qui s'affichent sur la tablette.- A l'aide d'un chariot à conducteur porté Ra ou 1b, récupérer les articles et préparer les commandes.- Transporter des denrées alimentaires.Il est possible de travailler en environnement froid (0° à 6°) ou froid négatif (-20°) ou milieu tempéré (15° à 20°).Vous veillez à toujours porter vos EPI et à respecter les règles de sécurité de l'entreprise.Horaires : du lundi a",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3052185",
+    "source": "francetravail",
+    "score": 9,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+préparateur de commandes",
+      "+magasinier",
+      "+logistique",
+      "+long terme"
+    ],
+    "candidature": "Bonjour,\n\nVotre offre de Préparateur de commandes (H/F) chez Non précisé retient toute mon attention.\nJ'ai récemment travaillé chez Lustucru Frais comme opérateur de production\nagroalimentaire (conditionnement, mise en barquettes, approvisionnement de ligne)\nen respectant strictement les normes d'hygiène, de sécurité et de qualité.\nJe suis également cariste CACES 3 avec une solide expérience en logistique.\n\nDisponible immédiatement, basé à Lorette, je peux rejoindre rapidement votre\néquipe sur 38 - Reventin-Vaugris. Mon CV est joint, je reste à votre disposition.\n\nCordialement",
+    "date_publication": "2026-05-27T03:27:21.000Z"
+  },
+  {
+    "titre": "Cariste (h/f)",
+    "entreprise": "IZIWORK",
+    "ville": "38 - Reventin-Vaugris",
+    "code_postal": "38121",
+    "type_contrat": "Intérim - 2 Mois",
+    "description": "Nous recherchons pour notre client une plateforme logistique de matériaux 2 caristes 1/3/5 pour longue mission intérim , en 2X8 matin et aprés midi\n\n\nÀ propos de la mission\n\nEn tant que CARISTE Préparateur de Commandes, vous assurez la préparation, le contrôle et l'expédition des marchandises conformément aux procédures et normes de sécurité. Ce rôle requiert dynamisme, polyvalence et rigueur, avec une capacité à travailler efficacement en équipe.\nUtilisation d un PDA \nPREPARATION DE COMMANDE \nCHARGEMENT ET DECHARGEMENT DE CAMIONS \nPrélever les produits dans le respect des procédures et des co",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208SWFQ",
+    "source": "francetravail",
+    "score": 9,
+    "distance_km": 0.0,
+    "tags": [
+      "+caces 3",
+      "+cariste",
+      "+préparateur de commandes",
+      "+logistique"
+    ],
+    "candidature": "",
+    "date_publication": "2026-05-26T14:50:36.056Z"
+  },
+  {
+    "titre": "Préparateur de commandes CACES 1B (H/F)",
+    "entreprise": "Non précisé",
+    "ville": "69 - Beauvallon",
+    "code_postal": "69700",
+    "type_contrat": "Intérim - 18 Mois",
+    "description": "Préparateur de commandes produits frais / sec, h/f Principales missions : Pour notre client leader sur le marché des produits agro-alimentaire : Les missions sur le poste : - Assurer la préparation des commandes dans le secteur du frais (2 à 5 degrés) - Occasionnellement en zone surgelés (-20 degrés) Conduite d'un chariot type CACES 1 (mais nous vous proposons la formation si vous ne l'avez pas) Manutentions diverses - ... Environnement de travail : - Entrepôt logistique sur CHASSAGNY (BEAUVALLON) - Environnement frais et surgelé Horaires : - Horaires du lundi au dimanche : 22h à 5h30 - Horair",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3177373",
+    "source": "francetravail",
+    "score": 8,
+    "distance_km": 0.0,
+    "tags": [
+      "+préparateur de commandes",
+      "+préparation de commandes",
+      "+logistique",
+      "+manutention",
+      "+agro-alimentaire",
+      "+long terme"
+    ],
+    "candidature": "",
+    "date_publication": "2026-05-29T14:34:52.000Z"
+  },
+  {
+    "titre": "PRÉPARATEUR DE COMMANDES (F/H) (H/F)",
+    "entreprise": "Non précisé",
+    "ville": "69 - Montagny",
+    "code_postal": "69700",
+    "type_contrat": "Intérim - 1 Mois",
+    "description": "descriptif du posteDescriptif du posteDans le cadre d'un renfort logistique, nous recherchons un Préparateur de commandes / Cariste (F/H). Au cœur de l'entrepôt de stockage des composants métalliques et produits finis, vous assurez le flux des marchandises pour garantir le respect des délais d'expédition.Descriptif des missionsPréparation de commandes : Prélèvement des pièces et produits selon les bons de commande, avec une attention particulière à la conf",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3165945",
+    "source": "francetravail",
+    "score": 8,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+préparateur de commandes",
+      "+préparation de commandes",
+      "+logistique"
+    ],
+    "candidature": "",
+    "date_publication": "2026-05-29T06:32:27.000Z"
+  },
+  {
+    "titre": "Préparateur de commandes (H/F)",
+    "entreprise": "CHARLOTTE RANNAUD RECRUTEMENT",
+    "ville": "38 - Vienne",
+    "code_postal": "38200",
+    "type_contrat": "CDD - 3 Mois",
+    "description": "Vous recherchez un job d'été dynamique, concret et polyvalent ?\n\nActeur en plein développement dans l'univers du carrelage et de l'aménagement, cette entreprise s'appuie sur une équipe engagée et une activité en forte croissance.\n\nPour renforcer son organisation logistique pendant la période estivale, elle recrute un-e Préparateur-rice de Commandes / Magasinier.\n\nPourquoi rejoindre cette entreprise ?\n- Une ambiance dynamique et conviviale\n- Un travail concret et rythmé\n- Une équipe impliquée et accessible\n- Un poste polyvalent au cœur de l'activité\n- Une expérience enrichissante dans un enviro",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208QPZF",
+    "source": "francetravail",
+    "score": 8,
+    "distance_km": 0.0,
+    "tags": [
+      "+caces 3",
+      "+préparateur de commandes",
+      "+magasinier",
+      "+logistique"
+    ],
+    "candidature": "",
+    "date_publication": "2026-05-22T11:26:46.572Z"
+  },
+  {
+    "titre": "Préparateur de commandes / Cariste H/F",
+    "entreprise": "MENWAY EMPLOI",
+    "ville": "26 - Beausemblant",
+    "code_postal": "26240",
+    "type_contrat": "Intérim - 3 Mois",
+    "description": "En tant que cariste/préparateur de commandes, vous êtes le héros de la logistique ! Votre mission : assurer le bon déplacement, stockage et préparation des produits avec vos fidèles chariots élévateurs. Grâce à vous, les marchandises circulent sans accrocs et nos clients sont toujours satisfaits.\n\nConcrètement, vous allez :\n\nManipuler les chariots élévateurs R489 1B, 3 et 5, en toute sécurité.\nCharger et décharger les marchandises avec précision.\nOptimiser l'organisation des stocks pour un flux efficace et fluide.\nTravailler main dans la main avec votre équipe pour une logistique au top !\n\nHOR",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/208VQWN",
+    "source": "francetravail",
+    "score": 8,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+préparateur de commandes",
+      "+logistique",
+      "+cdi"
+    ],
+    "candidature": "",
+    "date_publication": "2026-05-27T16:47:15.176Z"
+  },
+  {
+    "titre": "Cariste CACES 3 H/F",
+    "entreprise": "Randstad",
+    "ville": "38 - Chasse-sur-Rhône",
+    "code_postal": "38670",
+    "type_contrat": "Intérim - 18 Mois",
+    "description": "POSTE : Cariste CACES 3 H/F\nDESCRIPTION : nous recherchons pour le compte de nos clients spécialisés dans l'industrie et la logistique et basés sur les secteurs de Lyon et ses alentours des caristes (f/h).\n \n-> prêt(e) pour dynamiser votre parcours avec un poste aux missions variées ?\n-> vos missions :\n-décharger/charger des camions\n-réaliser les transferts internes\n-préparation des commandes ou alimenter des lignes de production\n-réceptionner et expédier les marchandises\n-montage de palettes en tenant compte du poids (stabilité) et de la fragilité des colis\n-vérification, validation et dispat",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3081238",
+    "source": "francetravail",
+    "score": 8,
+    "distance_km": 0.0,
+    "tags": [
+      "+caces 3",
+      "+cariste",
+      "+logistique",
+      "+manutention"
+    ],
+    "candidature": "",
+    "date_publication": "2026-05-27T11:53:25.000Z"
+  },
+  {
+    "titre": "Préparateur / Préparatrice de commandes (H/F)",
+    "entreprise": "Start People",
+    "ville": "38 - Reventin-Vaugris",
+    "code_postal": "38121",
+    "type_contrat": "Intérim - 3 Mois",
+    "description": "Devenir intérimaire chez Start People, c'est bénéficier de nombreux avantages : -Une prime parrainage de 100€ si vous aidez l'un de vos amis à être employé par Start People en intérim, CDD ou CDI -Une prime de participation aux bénéfices en fonction de vos heures travaillées -Des offres de formation pour vous faire monter en compétences et évoluer dans votre carrière -Un Comité Social et Economique qui vous propose de nombreux avantages pour vos événements familiaux, activités sportives, vacances... -Un accompagnement par le FASTT dès votre 1ère heure travaillée (logement, mobilité, garde d'en",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3280051",
+    "source": "francetravail",
+    "score": 7,
+    "distance_km": 0.0,
+    "tags": [
+      "+préparateur de commandes",
+      "+préparation de commandes",
+      "+logistique",
+      "+cdi"
+    ],
+    "candidature": "",
+    "date_publication": "2026-06-02T04:06:19.000Z"
+  },
+  {
+    "titre": "Préparateur de commandes (H/F)",
+    "entreprise": "RAS 700",
+    "ville": "69 - VOURLES",
+    "code_postal": "69390",
+    "type_contrat": "Intérim - 3 Mois",
+    "description": "Vous avez envie de diversifier vos expériences professionnelles, de gagner en liberté et en sérénité ? Vous êtes au bon endroit ! Avec nos 190 agences réparties sur tout le territoire, nous sommes toujours plus proches de vous. Il y a plein de raisons de donner raison à notre intérim, découvrez l'intérim fait pour vous !\nL'agence de Brignais recrute, pour l'un de ses clients spécialisé dans la sécurité en hauteur, un(e) Préparateur(rise) de commande avec CACES 3.\n\nVous êtes en lien avec le chef magasinier au quotidien pour le montage des pièces.\nVos principales missions sont de :\n- Préparation",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209BLKS",
+    "source": "francetravail",
+    "score": 7,
+    "distance_km": 0.0,
+    "tags": [
+      "+caces 3",
+      "+préparateur de commandes",
+      "+magasinier"
+    ],
+    "candidature": "",
+    "date_publication": "2026-06-01T17:45:16.317Z"
+  },
+  {
+    "titre": "Préparateur de commandes avec CACES 1B (H/F)",
+    "entreprise": "Non précisé",
+    "ville": "69 - Beauvallon",
+    "code_postal": "69700",
+    "type_contrat": "Intérim - 12 Mois",
+    "description": "PREPARATEUR DE COMMANDES, h/f Principales missions : De bonnes raisons de rejoindre notre client Une entreprise familiale, en croissance et ambitieuse ! Une équipe faite d'experts, dynamique, soudée et mobilisée autour d'une mission pleine de sens : fournir auprès de professionnels de la restauration traditionnelle, la boulangerie, pâtisserie, boucherie, la restauration rapide ou l'alimentation traiteur un service de qualité pour leurs produits. Les missions sur le poste : - Assurer la préparation des commandes dans le secteur du frais (2 à 5 degrés) - Occasionnellement en zone surgelés (-20 d",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3132573",
+    "source": "francetravail",
+    "score": 7,
+    "distance_km": 0.0,
+    "tags": [
+      "+préparateur de commandes",
+      "+préparation de commandes",
+      "+logistique",
+      "+manutention",
+      "+long terme"
+    ],
+    "candidature": "",
+    "date_publication": "2026-05-28T14:34:04.000Z"
+  },
+  {
+    "titre": "Préparateur / Préparatrice de commandes (H/F)",
+    "entreprise": "Start People",
+    "ville": "26 - Saint-Rambert-d'Albon",
+    "code_postal": "26140",
+    "type_contrat": "Intérim - 3 Mois",
+    "description": "Bien plus qu'une missionChez Start People, on vous aide à trouver la mission qui vous ressemble, mais en plus, on vous offre de nombreux avantages pour faciliter votre quotidien :\n\n-Prime de parrainage : En aidant un(e) ami(e) à trouver un emploi, vous gagnez... et lui aussi !\n-Des formations pour booster vos compétences et propulser votre carrière.\n-Comité Social et Economique : des réductions et avantages pour vos événements familiaux, loisirs, vacances...\n-Accompagnement FASTT dès votre première heure travaillée : logement, mobilité, garde d'enfants, complémentaire santé... vous avez tout c",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/1993636",
+    "source": "francetravail",
+    "score": 7,
+    "distance_km": 0.0,
+    "tags": [
+      "+préparateur de commandes",
+      "+préparation de commandes",
+      "+logistique",
+      "+cdi"
+    ],
+    "candidature": "",
+    "date_publication": "2026-04-28T04:06:50.000Z"
+  }
+];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
