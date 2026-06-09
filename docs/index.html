@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>08/06/2026 à 09:17</strong></p>
+  <p>Dernière mise à jour : <strong>09/06/2026 à 08:25</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,49 +130,14 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 08/06/2026 à 09:17<br>
+  Radar emploi v3 · GitHub Actions · 09/06/2026 à 08:25<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [
-  {
-    "titre": "Préparateur / Préparatrice de commandes (H/F)",
-    "entreprise": "SHCB",
-    "ville": "26 - Claveyson",
-    "code_postal": "26240",
-    "type_contrat": "CDD - 1 Mois",
-    "description": "Le groupe SHCB est un acteur indépendant de la restauration collective depuis 1997, dont l'expertise des cuisines centrales est aujourd'hui reconnue. Implanté de la Bourgogne à l'Occitanie, notre développement s'appuie sur la qualité et l'engagement de nos équipes, la qualité de nos approvisionnements et de nos outils de production dont nous sommes majoritairement propriétaires.\n\nNotre ambition est d'apporter, à partir de produits majoritairement issus des territoires au sein desquels nous sommes implantés, une cuisine favorisant goût, équilibre et plaisir. En nous inscrivant dans le projet de",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209KJYM",
-    "source": "francetravail",
-    "score": 2,
-    "distance_km": 0.0,
-    "tags": [
-      "+préparateur de commandes"
-    ],
-    "candidature": "Bonjour,\n\nVotre offre de Préparateur / Préparatrice de commandes (H/F) chez SHCB retient toute mon attention.\nJ'ai récemment travaillé chez Lustucru Frais comme opérateur de production\nagroalimentaire (conditionnement, mise en barquettes, approvisionnement de ligne)\nen respectant strictement les normes d'hygiène, de sécurité et de qualité.\nJe suis également cariste CACES 3 avec une solide expérience en logistique.\n\nDisponible immédiatement, basé à Lorette, je peux rejoindre rapidement votre\néquipe sur 26 - Claveyson. Mon CV est joint, je reste à votre disposition.\n\nCordialement",
-    "date_publication": "2026-06-08T10:48:10.786Z"
-  },
-  {
-    "titre": "Employé polyvalent atelier / dépôt stand événementiel (F/H) ",
-    "entreprise": "DSEV",
-    "ville": "69 - COMMUNAY",
-    "code_postal": "69360",
-    "type_contrat": "CDI",
-    "description": "La société DSEV (Des Stands Et Vous) recherche un(e) collaborateur/collaboratrice en CDI au poste d'employé polyvalent atelier / dépôt stand événementiel.\nFort d'un développement rapide basé essentiellement sur des recommandations et sur du «bouche à oreilles», nous souhaitons renforcer notre équipe. \n\nDSEV, société d'Installation Générale d'évènements, créée en 2017.\nChez DSEV, nos clients sont les organisateurs d'évènements (salons, foires, congrès, soirées d'entreprise.) ainsi que les salles d'expositions.\nNos champs d'intervention : pose de moquette, cloisons modulaires, tissus, éclairages",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/207TFPJ",
-    "source": "francetravail",
-    "score": 2,
-    "distance_km": 0.0,
-    "tags": [
-      "+cdi"
-    ],
-    "candidature": "Bonjour,\n\nSuite à votre offre de Employé polyvalent atelier / dépôt stand événementiel (F/H)  chez DSEV, je vous propose ma candidature.\nJe suis cariste CACES 3 avec plusieurs années d'expérience en environnement\nlogistique et industriel : conduite de chariot, chargement et déchargement\nde camions, préparation de commandes, picking et palettisation. Mes dernières\nmissions chez FIT (Heyrieux) et Plast Moul (Bourgoin-Jallieu) m'ont permis de\ntravailler dans le respect strict des consignes de sécurité.\n\nDisponible immédiatement, basé à Lorette, je peux intervenir rapidement sur 69 - COMMUNAY.\nMon CV est joint, je reste à votre disposition pour échanger.\n\nCordialement",
-    "date_publication": "2026-05-04T09:06:31.948Z"
-  }
-];
+const OFFRES = [];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
