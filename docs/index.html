@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>14/06/2026 à 08:36</strong></p>
+  <p>Dernière mise à jour : <strong>15/06/2026 à 10:49</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,14 +130,70 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 14/06/2026 à 08:36<br>
+  Radar emploi v3 · GitHub Actions · 15/06/2026 à 10:49<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [];
+const OFFRES = [
+  {
+    "titre": "Cariste H/F",
+    "entreprise": "TRANSPORTS PSL QUERLIOZ",
+    "ville": "38 - Estrablin",
+    "code_postal": "38780",
+    "type_contrat": "CDI",
+    "description": "Dans le cadre de notre croissance, nous recherchons un(e) Cariste CACES 1, 3 et 5. Vos missions - Assurer la réception et l'expédition des marchandises à l'aide de chariots élévateurs ; - Contrôler la conformité des marchandises réceptionnées et expédiées ; - Ranger les produits aux emplacements prévus ; - Respecter les consignes de sécurité et les procédures en vigueur au sein de l'entreprise ; - Assurer la gestion et le suivi des opérations via les outils informatiques ; - Échanger quotidiennement avec les conducteurs, les clients et la direction. Nous recherchons une personne : - Méthodique",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/3768289",
+    "source": "francetravail",
+    "score": 6,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+logistique",
+      "+cdi"
+    ],
+    "candidature": "Bonjour,\n\nSuite à votre offre de Cariste H/F chez TRANSPORTS PSL QUERLIOZ, je vous propose ma candidature.\nJe suis cariste CACES 3 avec plusieurs années d'expérience en environnement\nlogistique et industriel : conduite de chariot, chargement et déchargement\nde camions, préparation de commandes, picking et palettisation. Mes dernières\nmissions chez FIT (Heyrieux) et Plast Moul (Bourgoin-Jallieu) m'ont permis de\ntravailler dans le respect strict des consignes de sécurité.\n\nDisponible immédiatement, basé à Lorette, je peux intervenir rapidement sur 38 - Estrablin.\nMon CV est joint, je reste à votre disposition pour échanger.\n\nCordialement",
+    "date_publication": "2026-06-15T07:04:09.000Z"
+  },
+  {
+    "titre": "Manutentionnaire (H/F) polyvalent.e",
+    "entreprise": "LE RELAIS 42",
+    "ville": "42 - PELUSSIN",
+    "code_postal": "42410",
+    "type_contrat": "CDD - 4 Mois",
+    "description": "CDD dans le cadre d'une insertion par l'économie (Vérifier votre éligibilité à l'IAE auprès de France Travail et votre positionnement sur la plateforme ITOU - plateforme de l'inclusion) \n\nLe manutentionnaire est chargé de craquer des sacs de textiles, alimenter les postes de travail, déplacer des bacs manuellement ou à l'aide d'un transpalette, les peser, préparer des cartons.  CACES 3 souhaité. Dans le cadre de vos missions, vous serez également amené à utiliser une presse.\n\nPrérequis : Bonne condition physique, aptitude à la station debout prolongée et au port de charges, gestes répétitifs, ",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209SJZQ",
+    "source": "francetravail",
+    "score": 4,
+    "distance_km": 0.0,
+    "tags": [
+      "+caces 3",
+      "+manutention"
+    ],
+    "candidature": "Bonjour,\n\nSuite à votre offre de Manutentionnaire (H/F) polyvalent.e chez LE RELAIS 42, je vous propose ma candidature.\nJe suis cariste CACES 3 avec plusieurs années d'expérience en environnement\nlogistique et industriel : conduite de chariot, chargement et déchargement\nde camions, préparation de commandes, picking et palettisation. Mes dernières\nmissions chez FIT (Heyrieux) et Plast Moul (Bourgoin-Jallieu) m'ont permis de\ntravailler dans le respect strict des consignes de sécurité.\n\nDisponible immédiatement, basé à Lorette, je peux intervenir rapidement sur 42 - PELUSSIN.\nMon CV est joint, je reste à votre disposition pour échanger.\n\nCordialement",
+    "date_publication": "2026-06-15T08:40:00.207Z"
+  },
+  {
+    "titre": "Manutentionnaire H/F",
+    "entreprise": "CRIT INTERIM",
+    "ville": "38 - estrablin",
+    "code_postal": "38780",
+    "type_contrat": "Intérim - 2 Mois",
+    "description": "Dans le cadre du développement de son activité, nous recherchons pour l'un de nos clients spécialisé dans le secteur logistique un manutentionnaire H/F.\n\nVous serez en charge d'effectuer différentes opérations de manutention liées au chargement et au déchargement de camions, dans le respect des règles de sécurité et des procédures internes.\n\nVos principales missions seront :\n\n- Charger et décharger les marchandises des camions\n- Trier, répartir et ranger les produits dans les zones prévues\n- Effectuer du port de charges\n- Contrôler visuellement l'état des marchandises\n- Participer au nettoyage",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/209SPLJ",
+    "source": "francetravail",
+    "score": 2,
+    "distance_km": 0.0,
+    "tags": [
+      "+logistique",
+      "+manutention"
+    ],
+    "candidature": "Bonjour,\n\nSuite à votre offre de Manutentionnaire H/F chez CRIT INTERIM, je vous propose ma candidature.\nCariste CACES 3 et employé logistique avec une expérience significative en\nenvironnement industriel et logistique (chargement/déchargement, préparation\nde commandes, approvisionnement de lignes), je suis rigoureux, autonome et\nattentif aux règles de sécurité.\n\nDisponible immédiatement, basé à Lorette, je peux rejoindre votre équipe\nrapidement sur 38 - estrablin. Mon CV est joint, je reste à votre disposition.\n\nCordialement",
+    "date_publication": "2026-06-15T10:20:21.100Z"
+  }
+];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
