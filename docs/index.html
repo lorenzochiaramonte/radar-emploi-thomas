@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>04/07/2026 à 07:35</strong></p>
+  <p>Dernière mise à jour : <strong>05/07/2026 à 07:51</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,14 +130,109 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 04/07/2026 à 07:35<br>
+  Radar emploi v3 · GitHub Actions · 05/07/2026 à 07:51<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [];
+const OFFRES = [
+  {
+    "titre": "Cariste journée 12€69/h (H/F)",
+    "entreprise": "HEXCEL FIBERS",
+    "ville": "38 - ROUSSILLON",
+    "code_postal": "38150",
+    "type_contrat": "CDI",
+    "description": "\"Randstad Inhouse est un concept unique en France d'agence d'interim hébergée au cœur du site de production de nos clients. Forte de plus de 250 agences, nous accompagnons chaque année plus de 65 000 intérimaires.\n\nL'esprit de famille incarne notre ADN : étant chez nos clients aux côtés de nos intérimaires, nous « travaillons en famille » !\nNous rejoindre, c'est également bénéficier de nombreux avantage proposés par notre CE et nos partenaires.\"\n\nHexcel Fibers est un leader mondial dans la fabrication de matériaux composites avancés destinés à une variété d'industries, notamment l'aérospatiale",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210SNBL",
+    "source": "francetravail",
+    "score": 9,
+    "distance_km": 0.0,
+    "tags": [
+      "+caces 3",
+      "+cariste",
+      "+logistique",
+      "+cdi"
+    ],
+    "candidature": "Bonjour,\n\nVotre offre de Cariste journée 12€69/h (H/F) chez HEXCEL FIBERS retient toute mon attention.\nJ'ai récemment travaillé chez Lustucru Frais comme opérateur de production\nagroalimentaire (conditionnement, mise en barquettes, approvisionnement de ligne)\nen respectant strictement les normes d'hygiène, de sécurité et de qualité.\nJe suis également cariste CACES 3 avec une solide expérience en logistique.\n\nDisponible immédiatement, basé à Lorette, je peux rejoindre rapidement votre\néquipe sur 38 - ROUSSILLON. Mon CV est joint, je reste à votre disposition.\n\nCordialement",
+    "date_publication": "2026-07-03T15:32:30.477Z"
+  },
+  {
+    "titre": "CARISTE MANUTENTIONNAIRE H/F",
+    "entreprise": "Non précisé",
+    "ville": "07 - Annonay",
+    "code_postal": "07100",
+    "type_contrat": "Intérim - 1 Mois",
+    "description": "Nous recrutons sur Annonay (07), un(e) cariste confirmé(e).Les tâches associées au poste sont: - Chargement et déchargement de camions - Préparation de commandes, manutention.Poste en journée. Longue mission. 12EUR92 de l'heure.CACES 1 et 3 en cours de validité exigé. Possibilité d'heures supplémentaires.",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4574366",
+    "source": "francetravail",
+    "score": 6,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+préparation de commandes",
+      "+manutention"
+    ],
+    "candidature": "Bonjour,\n\nSuite à votre offre de CARISTE MANUTENTIONNAIRE H/F chez Non précisé, je vous propose ma candidature.\nJe suis cariste CACES 3 avec plusieurs années d'expérience en environnement\nlogistique et industriel : conduite de chariot, chargement et déchargement\nde camions, préparation de commandes, picking et palettisation. Mes dernières\nmissions chez FIT (Heyrieux) et Plast Moul (Bourgoin-Jallieu) m'ont permis de\ntravailler dans le respect strict des consignes de sécurité.\n\nDisponible immédiatement, basé à Lorette, je peux intervenir rapidement sur 07 - Annonay.\nMon CV est joint, je reste à votre disposition pour échanger.\n\nCordialement",
+    "date_publication": "2026-07-05T03:40:49.000Z"
+  },
+  {
+    "titre": "Cariste Caces 4 industrie (F/H)",
+    "entreprise": "ADEQUAT 011.",
+    "ville": "26 - Laveyron",
+    "code_postal": "26240",
+    "type_contrat": "Intérim - 6 Mois",
+    "description": "L'agence ADEQUAT d'Annonay recherche pour l'un de ses clients, leader dans l'industrie du papier :\nCariste CACES 4 (F/H)\n\nVos missions :\n\n * Assurer une polyvalence dans les tâches logistiques\n * Utiliser un système informatique pour le suivi et le traitement des produits et palettes\n * Réceptionner, stocker et transférer des produits sur palettes avec un chariot élévateur (CACES 4)\n * Garantir la sécurité et la propreté de votre zone d'intervention\n\nPoste à pourvoir en horaires 2x7 ou 5*8\nEntreprise située à Laveyron (26240)\n\nVotre profil :\n- Titulaire du CACES 4.\n- Sérieux, ponctuel, dynamiq",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210SJGV",
+    "source": "francetravail",
+    "score": 5,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+logistique",
+      "+manutention"
+    ],
+    "candidature": "Bonjour,\n\nSuite à votre offre de Cariste Caces 4 industrie (F/H) chez ADEQUAT 011., je vous propose ma candidature.\nJe suis cariste CACES 3 avec plusieurs années d'expérience en environnement\nlogistique et industriel : conduite de chariot, chargement et déchargement\nde camions, préparation de commandes, picking et palettisation. Mes dernières\nmissions chez FIT (Heyrieux) et Plast Moul (Bourgoin-Jallieu) m'ont permis de\ntravailler dans le respect strict des consignes de sécurité.\n\nDisponible immédiatement, basé à Lorette, je peux intervenir rapidement sur 26 - Laveyron.\nMon CV est joint, je reste à votre disposition pour échanger.\n\nCordialement",
+    "date_publication": "2026-07-03T14:14:37.108Z"
+  },
+  {
+    "titre": "Cariste (F/H)",
+    "entreprise": "RANDSTAD",
+    "ville": "38 - Roussillon",
+    "code_postal": "38150",
+    "type_contrat": "Intérim - 3 Mois",
+    "description": "Comment aimeriez-vous optimiser vos compétences en logistique en tant que Cariste (F/H) ?\nRejoignez une équipe dynamique où vous serez responsable de la manutention sécurisée des matériaux en journée\n\n- Assurer le déplacement, le chargement et le déchargement des marchandises avec précision et efficacité \n- Vérifier et organiser les stocks pour garantir leur disponibilité et leur accessibilité en tout temps \n- Respecter les procédures de sécurité tout en manipulant divers équipements de levage et de manutention\n\nDécouvrez ce package attractif :\n- Contrat: Intérim\n\n- Durée: 3/mois\n\n- Salaire: 1",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210SGYH",
+    "source": "francetravail",
+    "score": 5,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+logistique",
+      "+manutention"
+    ],
+    "candidature": "Bonjour,\n\nSuite à votre offre de Cariste (F/H) chez RANDSTAD, je vous propose ma candidature.\nJe suis cariste CACES 3 avec plusieurs années d'expérience en environnement\nlogistique et industriel : conduite de chariot, chargement et déchargement\nde camions, préparation de commandes, picking et palettisation. Mes dernières\nmissions chez FIT (Heyrieux) et Plast Moul (Bourgoin-Jallieu) m'ont permis de\ntravailler dans le respect strict des consignes de sécurité.\n\nDisponible immédiatement, basé à Lorette, je peux intervenir rapidement sur 38 - Roussillon.\nMon CV est joint, je reste à votre disposition pour échanger.\n\nCordialement",
+    "date_publication": "2026-07-03T13:51:37.034Z"
+  },
+  {
+    "titre": "CARISTE JOURNÉE (F/H) (H/F)",
+    "entreprise": "Non précisé",
+    "ville": "38 - Roussillon",
+    "code_postal": "38150",
+    "type_contrat": "Intérim - 2 Mois",
+    "description": "descriptif du posteVos responsabilités incluront :Assurer le déchargement des camionsAssurer les flux de matières premières, produits intermédiaires, produits finis, déchets ... enfonction des besoinsRéceptionner les livraisons, les contrôler et signaler toute anomalie dans les livraisons (physiques etinformatiques)Ranger les réceptions dans le magasin (physiques et informatiques)Réaliser les préparations de commandes internes (pour livraison en atelier) e",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4584603",
+    "source": "francetravail",
+    "score": 3,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste"
+    ],
+    "candidature": "Bonjour,\n\nSuite à votre offre de CARISTE JOURNÉE (F/H) (H/F) chez Non précisé, je vous propose ma candidature.\nJe suis cariste CACES 3 avec plusieurs années d'expérience en environnement\nlogistique et industriel : conduite de chariot, chargement et déchargement\nde camions, préparation de commandes, picking et palettisation. Mes dernières\nmissions chez FIT (Heyrieux) et Plast Moul (Bourgoin-Jallieu) m'ont permis de\ntravailler dans le respect strict des consignes de sécurité.\n\nDisponible immédiatement, basé à Lorette, je peux intervenir rapidement sur 38 - Roussillon.\nMon CV est joint, je reste à votre disposition pour échanger.\n\nCordialement",
+    "date_publication": "2026-07-05T08:36:32.000Z"
+  }
+];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
