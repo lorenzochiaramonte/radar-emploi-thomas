@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>13/07/2026 à 08:08</strong></p>
+  <p>Dernière mise à jour : <strong>14/07/2026 à 07:02</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,14 +130,147 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 13/07/2026 à 08:08<br>
+  Radar emploi v3 · GitHub Actions · 14/07/2026 à 07:02<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [];
+const OFFRES = [
+  {
+    "titre": "Cariste (H/F)",
+    "entreprise": "ADECCO FRANCE",
+    "ville": "38 - Saint-Maurice-l'Exil",
+    "code_postal": "38550",
+    "type_contrat": "CDI",
+    "description": "Description du poste :\n\nIntégrez une équipe dynamique et participez à des projets captivants grâce à notre offre de CDI Intérimaire.\n\nAdecco recrute pour l'un de ses clients un·e Cariste Magasinier (H/F) en CDII, temps plein, à Saint-Maurice-l'Exil (38550), à pourvoir dès que possible. Vous intégrez une entreprise du secteur industriel et nucléaire, exigeante en matière de sûreté, qualité et respect des procédures.\n\nVous gérez les flux de marchandises : réception, stockage, préparation et expédition, en assurant la traçabilité des mouvements de stock. Vous conduisez un chariot élévateur CACES ",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4933288",
+    "source": "francetravail",
+    "score": 8,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+magasinier",
+      "+logistique",
+      "+cdi"
+    ],
+    "candidature": "Bonjour,\n\nVotre offre de Cariste (H/F) chez ADECCO FRANCE retient toute mon attention.\nJ'ai récemment travaillé chez Lustucru Frais comme opérateur de production\nagroalimentaire (conditionnement, mise en barquettes, approvisionnement de ligne)\nen respectant strictement les normes d'hygiène, de sécurité et de qualité.\nJe suis également cariste CACES 3 avec une solide expérience en logistique.\n\nDisponible immédiatement, basé à Lorette, je peux rejoindre rapidement votre\néquipe sur 38 - Saint-Maurice-l'Exil. Mon CV est joint, je reste à votre disposition.\n\nCordialement",
+    "date_publication": "2026-07-14T03:20:32.000Z"
+  },
+  {
+    "titre": "Préparateur de commandes cariste (H/F)",
+    "entreprise": "ACTUAL ST CHAMOND 3285",
+    "ville": "42 - Sorbiers",
+    "code_postal": "42290",
+    "type_contrat": "Intérim - 4 Mois",
+    "description": "Actual Group, 5ème acteur français de l'emploi, est un groupe humaniste facilitant le droit au travail pour tous. Organisé autour de l'intérim (dont l'intérim d'insertion où il est n°1), du recrutement, de l'accompagnement et de la formation. Actual opère en France et à l'étranger, avec 4 000 collaborateurs et 600 agences.\n\n\nL'agence Actual de Saint-Chamond recherche pour l'un de ses clients, un préparateur de commandes cariste H/F\nVos missions principales :\nEn tant qu'élément moteur de notre logistique, vous serez en charge de la réception des cartons et de la gestion informatisée des colis, ",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211DJLR",
+    "source": "francetravail",
+    "score": 7,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+préparateur de commandes",
+      "+logistique",
+      "+manutention"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de Préparateur de commandes cariste (H/F) chez ACTUAL ST CHAMOND 3285.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 42 - Sorbiers, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-07-13T17:53:21.619Z"
+  },
+  {
+    "titre": "Cariste (H/F)",
+    "entreprise": "MANPOWER FRANCE",
+    "ville": "38 - Vienne",
+    "code_postal": "38200",
+    "type_contrat": "Intérim - 1 Mois",
+    "description": "Description du poste :\n\nManpower VIENNE recherche pour son client, acteur majeur de la fabrication de produits d'isolation appartenant à un Groupe International, un Cariste CACES 3 (H/F) En tant que responsable principal de la gestion des stocks, vous aurez pour mission de déplacer les matières de la ligne de production vers la zone de stockage à l'aide d'un chariot élévateur.\n\n\nUne grande minutie et prudence sont nécessaires lors de la conduite, car bien que les matériaux ne soient pas lourds, ils peuvent être volumineux.\n\n\nVous travaillerez selon un horaire en 2x7 ou 3x7\n\n\nLe taux horaire es",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4934645",
+    "source": "francetravail",
+    "score": 6,
+    "distance_km": 0.0,
+    "tags": [
+      "+caces 3",
+      "+cariste"
+    ],
+    "candidature": "Bonjour,\n\nVotre offre de Cariste (H/F) chez MANPOWER FRANCE retient toute mon attention.\nJ'ai récemment travaillé chez Lustucru Frais comme opérateur de production\nagroalimentaire (conditionnement, mise en barquettes, approvisionnement de ligne)\nen respectant strictement les normes d'hygiène, de sécurité et de qualité.\nJe suis également cariste CACES 3 avec une solide expérience en logistique.\n\nDisponible immédiatement, basé à Lorette, je peux rejoindre rapidement votre\néquipe sur 38 - Vienne. Mon CV est joint, je reste à votre disposition.\n\nCordialement",
+    "date_publication": "2026-07-14T03:20:37.000Z"
+  },
+  {
+    "titre": "Préparateur de commandes - cariste H/F",
+    "entreprise": "ADEQUAT INTERIM",
+    "ville": "38 - Vienne",
+    "code_postal": "38200",
+    "type_contrat": "Intérim - 6 Mois",
+    "description": "Vous êtes cariste ?\n\nVotre agence Adéquat de Salaise recrute des caristes CACES 5 F/H pour l'un de ses clients. En contrat d'intérim, rejoignez les équipes logistiques et réception de l'entreprise.\n\nVos missions seront :\n\n- Préparer les commandes de produits\n- Conduite de chariots CACES 5\n\nVos horaires : 15h00-22h00 du lundi au vendredi\n\nProfil :\n\n- Vous êtes titulaire du CACES 5\n- Vous êtes autonome et faites preuve de rigueur\n- Vous avez l'esprit d'équipe\n\nRémunération et avantages :\n- Taux horaire fixe + majoration des heures de nuit + primes\n\n- Participation aux bénéfices + CET 5% ;\n- Acom",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211DKMB",
+    "source": "francetravail",
+    "score": 6,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+préparateur de commandes",
+      "+logistique"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de Préparateur de commandes - cariste H/F chez ADEQUAT INTERIM.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 38 - Vienne, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-07-13T18:47:32.986Z"
+  },
+  {
+    "titre": "Préparateur / Préparatrice de commandes (H/F)",
+    "entreprise": "MANPOWER FRANCE",
+    "ville": "38 - Villette-de-Vienne",
+    "code_postal": "38200",
+    "type_contrat": "Intérim - 1 Mois",
+    "description": "Description du poste :\n\nL'agence Manpower de VIENNE recherche pour son client, d'un Préparateur de commandes CACES 1B à Villette de Vienne (H/F Préparer les commandes Utiliser le caces 1B en respectant les normes de sécurité Vérifier les produits Organiser l'espace de stockage Assurer la traçabilité des articles Contrôler la qualité Emballer les produits Optimiser la logistique\n\n\nHoraires de travail ; 9h30 - 17h30\n\n\nRémunération : 13ème mois + Tickets restaurant (valeur faciale 10€) Vous justifiez d'une première expérience en préparation de commandes, avec maîtrise des règles de sécurité. Vous",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4934516",
+    "source": "francetravail",
+    "score": 5,
+    "distance_km": 0.0,
+    "tags": [
+      "+préparateur de commandes",
+      "+préparation de commandes",
+      "+logistique"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de Préparateur / Préparatrice de commandes (H/F) chez MANPOWER FRANCE.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 38 - Villette-de-Vienne, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-07-14T03:20:37.000Z"
+  },
+  {
+    "titre": "Chef de quai jour  (H/F)",
+    "entreprise": "STG",
+    "ville": "69 - Communay",
+    "code_postal": "69360",
+    "type_contrat": "CDI",
+    "description": "Nous recherchons un Chef de Quai Jour (H/F) en CDI\nPour notre filiale de transport sous température dirigée STG Lyon Sud, située à Communay (69). \nVos principales missions seront :\n-\tOrganiser, coordonner et contrôler les activités de quai afin de garantir la fluidité des flux de marchandises et le respect des délais en lien permanent avec l'exploitation\n-\tSuperviser les opérations de chargement et de déchargement en veillant à la qualité des prestations et à la réduction des litiges de manière qualitative et quantitatif\n-\tSuivre les indicateurs de performance et mettre en oeuvre les actions n",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4909562",
+    "source": "francetravail",
+    "score": 4,
+    "distance_km": 0.0,
+    "tags": [
+      "+logistique",
+      "+manutention",
+      "+cdi"
+    ],
+    "candidature": "",
+    "date_publication": "2026-07-13T14:34:15.000Z"
+  },
+  {
+    "titre": "Conducteur ligne fabrication (H/F)",
+    "entreprise": "MANPOWER FRANCE",
+    "ville": "38 - Vienne",
+    "code_postal": "38200",
+    "type_contrat": "Intérim - 1 Mois",
+    "description": "Description du poste :\n\nManpower VIENNE recherche pour son client, un Conducteur de ligne à Vienne (H/F) Voici les responsabilités qui vous attendent Vous prenez connaissance du programme de fabrication Vous passez commande de la matière première auprès du cariste en charge de l'approvisionnement Vous ajustez les réglages de la machine ainsi que les paramètres de fabrication Vous préparez et remplacez les fils de découpe si nécessaire Vous éliminez les chutes destinées au broyage Tout au long de la production, vous effectuez les contrôles et en faites le suivi Vous signalez tout écart de confo",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/4934626",
+    "source": "francetravail",
+    "score": 3,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste"
+    ],
+    "candidature": "",
+    "date_publication": "2026-07-14T03:20:37.000Z"
+  }
+];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
