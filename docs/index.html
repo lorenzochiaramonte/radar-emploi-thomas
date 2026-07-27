@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>26/07/2026 à 07:29</strong></p>
+  <p>Dernière mise à jour : <strong>27/07/2026 à 08:20</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,14 +130,32 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 26/07/2026 à 07:29<br>
+  Radar emploi v3 · GitHub Actions · 27/07/2026 à 08:20<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [];
+const OFFRES = [
+  {
+    "titre": "Un cariste r489 1/3/5 (H/F)",
+    "entreprise": "ACTUAL ROUSSILLON 1174",
+    "ville": "26 - Beausemblant",
+    "code_postal": "26240",
+    "type_contrat": "Intérim - 6 Mois",
+    "description": "Vous serez en charge de :\n- Réaliser les mises en stock suite à une réception ou une entrée de production- Réceptionner les produits finis ou les matières premières- Préparer les commandes en fonction des bons de préparation informatisés (produits finis et matières premières)- Assurer le contrôle des commandes préparées \nPour cela, vous devrez respecter les règles de sécurité établies dans l'entreprise pour laquelle vous travaillerez.",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211RPSY",
+    "source": "francetravail",
+    "score": 3,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste"
+    ],
+    "candidature": "Bonjour,\n\nVotre offre de Un cariste r489 1/3/5 (H/F) chez ACTUAL ROUSSILLON 1174 retient toute mon attention.\nJ'ai récemment travaillé chez Lustucru Frais comme opérateur de production\nagroalimentaire (conditionnement, mise en barquettes, approvisionnement de ligne)\nen respectant strictement les normes d'hygiène, de sécurité et de qualité.\nJe suis également cariste CACES 3 avec une solide expérience en logistique.\n\nDisponible immédiatement, basé à Lorette, je peux rejoindre rapidement votre\néquipe sur 26 - Beausemblant. Mon CV est joint, je reste à votre disposition.\n\nCordialement",
+    "date_publication": "2026-07-27T09:54:31.426Z"
+  }
+];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
