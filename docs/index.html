@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>03/08/2026 à 08:19</strong></p>
+  <p>Dernière mise à jour : <strong>04/08/2026 à 07:30</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,14 +130,49 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 03/08/2026 à 08:19<br>
+  Radar emploi v3 · GitHub Actions · 04/08/2026 à 07:30<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [];
+const OFFRES = [
+  {
+    "titre": "Préparateur de commandes (H/F)",
+    "entreprise": "DANA RECRUTEMENT",
+    "ville": "69 - Beauvallon",
+    "code_postal": "69700",
+    "type_contrat": "Intérim - 3 Mois",
+    "description": "Aquila RH, première agence d'emploi implantée sur le secteur de Chasse sur Rhône.\n\nL'essence d'Aquila RH réside dans la puissance de son réseau, l'engagement de ses professionnels indépendants et la proximité avec les acteurs locaux.\n\nNous recherchons pour notre client, basé à Beauvallon ( 69700 ) , un préparateur de commande en horaires d'après midi avec CACES 1B\n\n\nVos missions:\nAu sein de l'entrepôt, vous aurez pour missions d'assurer la réception des camions :\n\n- utiliser un chariot élévateur CACES 1 B\n\n-réceptionner les produits\n-vérifier les quantités\n-contrôler la conformité de la livrai",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/211ZGSL",
+    "source": "francetravail",
+    "score": 2,
+    "distance_km": 0.0,
+    "tags": [
+      "+préparateur de commandes"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de Préparateur de commandes (H/F) chez DANA RECRUTEMENT.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 69 - Beauvallon, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-08-03T12:48:06.966Z"
+  },
+  {
+    "titre": "Préparateur de commandes fruits et légumes H/F",
+    "entreprise": "RENE PRIMEURS",
+    "ville": "42 - ST ETIENNE",
+    "code_postal": "42000",
+    "type_contrat": "CDD - 6 Mois",
+    "description": "Magasin primeur situé au centre ville de Saint-Étienne recherche:\n\nUn/e préparateur/trice de commandes expérimenté/e en fruits et légumes.\n\nVous effectuez la préparation des commandes de fruits et légumes, et gérez les stocks, veillez à la bonne conservation des produits et à la présentation des étalages. Vous serez amené/e à aider ponctuellement en livraison\n\nPoste proposé à plein temps 35h du lundi au samedi avec 1 jour de repos en semaine + dimanche.\nCDD 6 mois, possibilité d'évolution du contrat.\n\nCONNAISSANCE DES DIFFÉRENTES VARIÉTÉS DES FRUITS ET LÉGUMES IMPÉRATIVE \n\n",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/210XXTP",
+    "source": "francetravail",
+    "score": 2,
+    "distance_km": 0.0,
+    "tags": [
+      "+préparateur de commandes"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de Préparateur de commandes fruits et légumes H/F chez RENE PRIMEURS.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 42 - ST ETIENNE, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-07-08T12:43:59.646Z"
+  }
+];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
