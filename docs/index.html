@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>10/08/2026 à 06:05</strong></p>
+  <p>Dernière mise à jour : <strong>11/08/2026 à 05:45</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,14 +130,33 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 10/08/2026 à 06:05<br>
+  Radar emploi v3 · GitHub Actions · 11/08/2026 à 05:45<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [];
+const OFFRES = [
+  {
+    "titre": "Préparateur de commandes H/F",
+    "entreprise": "CRIT INTERIM",
+    "ville": "38 - Reventin-Vaugris",
+    "code_postal": "38121",
+    "type_contrat": "Intérim - 6 Mois",
+    "description": "VOus intervenez au sein d'un environnement logistique et participez activement à la préparation des commandes, dans le respect des procédures internes, des délais et des règles de sécurité.\n\nVos missions :\n\nPréparer les commandes selon les bons et instructions transmis\nUtiliser un transpalette électrique (CACES 1B)\nContrôler la conformité et la qualité des produits\nEmballer, conditionner et étiqueter les colis\nParticiper à la gestion des stocks et aux opérations d'inventaire\nMaintenir un poste de travail propre, organisé et sécurisé",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/212GWKL",
+    "source": "francetravail",
+    "score": 3,
+    "distance_km": 0.0,
+    "tags": [
+      "+préparateur de commandes",
+      "+logistique"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de Préparateur de commandes H/F chez CRIT INTERIM.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 38 - Reventin-Vaugris, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-08-10T10:28:07.422Z"
+  }
+];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
