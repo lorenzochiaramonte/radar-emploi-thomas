@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>06/09/2026 à 09:00</strong></p>
+  <p>Dernière mise à jour : <strong>07/09/2026 à 09:48</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,14 +130,37 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 06/09/2026 à 09:00<br>
+  Radar emploi v3 · GitHub Actions · 07/09/2026 à 09:48<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [];
+const OFFRES = [
+  {
+    "titre": "Préparateur de commandes (formation financée et emploi à la clé) (H/F)",
+    "entreprise": "ALDI MARCHE",
+    "ville": "38 - Oytier-Saint-Oblas",
+    "code_postal": "38780",
+    "type_contrat": "CDI",
+    "description": "Vous souhaitez découvrir un nouveau métier et intégrer durablement une entreprise reconnue ? Cette opportunité est faite pour vous !\n\nDans le cadre de son développement, ALDI recrute ses futurs Préparateurs(tries) de commandes/Caristes par le biais d'une Préparation Opérationnelle à l'Emploi Individuelle (POEI), avec une embauche à la clé.\n\nPendant plusieurs semaines, vous serez accompagné(e) par des formateurs et des professionnels de la logistique qui vous permettront d'acquérir toutes les compétences nécessaires pour exercer ce métier.\n\nLa formation vous permettra notamment de :\n- Découvrir",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/213LBFS",
+    "source": "francetravail",
+    "score": 11,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+préparateur de commandes",
+      "+préparation de commandes",
+      "+logistique",
+      "+manutention",
+      "+cdi"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de Préparateur de commandes (formation financée et emploi à la clé) (H/F) chez ALDI MARCHE.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 38 - Oytier-Saint-Oblas, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-09-04T15:32:53.247Z"
+  }
+];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
