@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>27/09/2026 à 10:15</strong></p>
+  <p>Dernière mise à jour : <strong>28/09/2026 à 11:18</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,14 +130,54 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 27/09/2026 à 10:15<br>
+  Radar emploi v3 · GitHub Actions · 28/09/2026 à 11:18<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [];
+const OFFRES = [
+  {
+    "titre": "Cariste (H/F)",
+    "entreprise": "Start People",
+    "ville": "43 - Saint-Romain-Lachalm",
+    "code_postal": "43620",
+    "type_contrat": "Intérim - 12 Mois",
+    "description": "Bien plus qu'une mission\nChez Start People, on vous aide à trouver la mission qui vous ressemble, mais en plus, on vous offre de nombreux avantages pour faciliter votre quotidien :\n\n-Prime de parrainage : En aidant un(e) ami(e) à trouver un emploi, vous gagnez... et lui aussi !\n-Des formations pour booster vos compétences et propulser votre carrière.\n-Comité Social et Economique : des réductions et avantages pour vos événements familiaux, loisirs, vacances...\n-StartApp, notre application mobile, simplifie vos échanges avec votre agence : gérez vos acomptes, relevés d'heures, attestations et bi",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/7463491",
+    "source": "francetravail",
+    "score": 8,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+préparation de commandes",
+      "+cdi",
+      "+long terme"
+    ],
+    "candidature": "Bonjour,\n\nJe vous adresse ma candidature pour votre offre de Cariste (H/F) chez Start People.\nAvec plus de 10 ans d'expérience en préparation de commandes, picking,\nconstitution de palettes, filmage et cerclage, je suis également titulaire\ndu CACES 3. Mes missions précédentes en intérim et en CDD m'ont habitué aux\nenvironnements logistiques exigeants.\n\nDisponible immédiatement, basé à Lorette à proximité de 43 - Saint-Romain-Lachalm, je peux\ndémarrer rapidement. Vous trouverez mon CV en pièce jointe.\n\nCordialement",
+    "date_publication": "2026-09-28T09:15:47.099Z"
+  },
+  {
+    "titre": "Cariste (H/F)",
+    "entreprise": "DANA RECRUTEMENT",
+    "ville": "38 - Villette-de-Vienne",
+    "code_postal": "38200",
+    "type_contrat": "Intérim - 3 Mois",
+    "description": "Aquila RH, agence d'emploi en franchise implantée à Chasse-sur-Rhône, accompagne chaque jour des candidats en intérim, CDD et CDI dans leur parcours professionnel.\nGrâce à notre connaissance du secteur et à notre proximité avec les entreprises locales, nous vous proposons des opportunités adaptées à votre expérience, vos compétences et votre projet professionnel.\n\nNous recrutons pour l'un de nos clients, situé à Villette-de-Vienne, un Cariste CACES 5 H/F pour renforcer son équipe logistique.\nVous serez principalement chargé(e) de la conduite du chariot CACES 5, du stockage et du déplacement de",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/214LXLT",
+    "source": "francetravail",
+    "score": 6,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste",
+      "+logistique",
+      "+cdi"
+    ],
+    "candidature": "Bonjour,\n\nSuite à votre offre de Cariste (H/F) chez DANA RECRUTEMENT, je vous propose ma candidature.\nJe suis cariste CACES 3 avec plusieurs années d'expérience en environnement\nlogistique et industriel : conduite de chariot, chargement et déchargement\nde camions, préparation de commandes, picking et palettisation. Mes dernières\nmissions chez FIT (Heyrieux) et Plast Moul (Bourgoin-Jallieu) m'ont permis de\ntravailler dans le respect strict des consignes de sécurité.\n\nDisponible immédiatement, basé à Lorette, je peux intervenir rapidement sur 38 - Villette-de-Vienne.\nMon CV est joint, je reste à votre disposition pour échanger.\n\nCordialement",
+    "date_publication": "2026-09-28T11:20:40.767Z"
+  }
+];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
