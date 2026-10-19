@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>18/10/2026 à 09:12</strong></p>
+  <p>Dernière mise à jour : <strong>19/10/2026 à 10:22</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,14 +130,50 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 18/10/2026 à 09:12<br>
+  Radar emploi v3 · GitHub Actions · 19/10/2026 à 10:22<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [];
+const OFFRES = [
+  {
+    "titre": "CARISTE HORAIRES JOURNé(e) (H/F)",
+    "entreprise": "Non précisé",
+    "ville": "43 - Saint-Romain-Lachalm",
+    "code_postal": "43620",
+    "type_contrat": "Intérim - 1 Mois",
+    "description": " Vos responsabilités seront : Charger et décharger les marchandises en utilisant les équipements de levage appropriés, Effectuer la préparation des commandes en respectant les délais et les consignes de sécurité, Participer à l'organisation générale du stockage et veiller à la propreté des espaces de travail, Respecter strictement les règles de sécurité lors des opérations de chargement, déchargement et déplacement des matériaux, Contrôle des marchandises réceptionnées et expédiées, Respect des consignes de sécurité et des procédures internes. L'environnement de l'entreprise nécessite un netto",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8021654",
+    "source": "francetravail",
+    "score": 3,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste"
+    ],
+    "candidature": "Bonjour,\n\nVotre offre de CARISTE HORAIRES JOURNé(e) (H/F) chez Non précisé retient toute mon attention.\nJ'ai récemment travaillé chez Lustucru Frais comme opérateur de production\nagroalimentaire (conditionnement, mise en barquettes, approvisionnement de ligne)\nen respectant strictement les normes d'hygiène, de sécurité et de qualité.\nJe suis également cariste CACES 3 avec une solide expérience en logistique.\n\nDisponible immédiatement, basé à Lorette, je peux rejoindre rapidement votre\néquipe sur 43 - Saint-Romain-Lachalm. Mon CV est joint, je reste à votre disposition.\n\nCordialement",
+    "date_publication": "2026-10-18T11:56:43.066Z"
+  },
+  {
+    "titre": "Réceptionnaire produits frais CACES 1B et 5 H/F/X",
+    "entreprise": "Non précisé",
+    "ville": "69 - Beauvallon",
+    "code_postal": "69700",
+    "type_contrat": "Intérim - 1 Mois",
+    "description": "Réceptionnaire avec CACES 1B et 5, h/fPrincipales missions :De bonnes raisons de rejoindre notre clientUne entreprise familiale, en croissance et ambitieuse ! Une équipe faite d'experts, dynamique, soudée et mobilisée autour d'une mission pleine de sens : fournir auprès de professionnels de la restauration traditionnelle, la boulangerie, pâtisserie, boucherie, la restauration rapide ou l'alimentation traiteur un service de qualité pour leurs produits.Les missions sur le poste :- Assurer la préparation des commandes dans le secteur frais (températures positives)- Conduite d'un chariot type CACE",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8021593",
+    "source": "francetravail",
+    "score": 2,
+    "distance_km": 0.0,
+    "tags": [
+      "+logistique",
+      "+manutention"
+    ],
+    "candidature": "Bonjour,\n\nSuite à votre offre de Réceptionnaire produits frais CACES 1B et 5 H/F/X chez Non précisé, je vous propose ma candidature.\nJe suis cariste CACES 3 avec plusieurs années d'expérience en environnement\nlogistique et industriel : conduite de chariot, chargement et déchargement\nde camions, préparation de commandes, picking et palettisation. Mes dernières\nmissions chez FIT (Heyrieux) et Plast Moul (Bourgoin-Jallieu) m'ont permis de\ntravailler dans le respect strict des consignes de sécurité.\n\nDisponible immédiatement, basé à Lorette, je peux intervenir rapidement sur 69 - Beauvallon.\nMon CV est joint, je reste à votre disposition pour échanger.\n\nCordialement",
+    "date_publication": "2026-10-18T11:56:41.039Z"
+  }
+];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
