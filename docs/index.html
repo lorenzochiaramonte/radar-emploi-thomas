@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>31/10/2026 à 10:39</strong></p>
+  <p>Dernière mise à jour : <strong>01/11/2026 à 11:33</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,35 +130,14 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 31/10/2026 à 10:39<br>
+  Radar emploi v3 · GitHub Actions · 01/11/2026 à 11:33<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [
-  {
-    "titre": "Cariste d'entrepôt (H/F)",
-    "entreprise": "Gojob",
-    "ville": "69 - Communay",
-    "code_postal": "69360",
-    "type_contrat": "Intérim - 31 Jour(s)",
-    "description": "Nous recherchons pour notre client acteur de l'industrie agroalimentaire, spécialisé dans la fabrication et la logistique de produits alimentaires frais, des Caristes d'entrepôt pour démarrer dès que possible, avec une première expérience de deux ans en logistique, transport ou en tant que cariste.\nVotre mission est essentielle pour assurer la réception, le contrôle, le stockage et l'acheminement des produits dans le respect des standards de qualité, de sécurité et de délai.\nCe job se situe à Communay (69)\nLe rythme de travail pour cette mission sera en 3x8.\n\nAvantages de la mission\n- Acomptes",
-    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8423351",
-    "source": "francetravail",
-    "score": 6,
-    "distance_km": 0.0,
-    "tags": [
-      "+cariste",
-      "+logistique",
-      "+manutention",
-      "+agroalimentaire"
-    ],
-    "candidature": "Bonjour,\n\nVotre offre de Cariste d'entrepôt (H/F) chez Gojob retient toute mon attention.\nJ'ai récemment travaillé chez Lustucru Frais comme opérateur de production\nagroalimentaire (conditionnement, mise en barquettes, approvisionnement de ligne)\nen respectant strictement les normes d'hygiène, de sécurité et de qualité.\nJe suis également cariste CACES 3 avec une solide expérience en logistique.\n\nDisponible immédiatement, basé à Lorette, je peux rejoindre rapidement votre\néquipe sur 69 - Communay. Mon CV est joint, je reste à votre disposition.\n\nCordialement",
-    "date_publication": "2026-10-30T17:31:46.409Z"
-  }
-];
+const OFFRES = [];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
