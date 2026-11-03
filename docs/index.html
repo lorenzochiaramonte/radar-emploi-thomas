@@ -109,7 +109,7 @@ footer {
 
 <header>
   <h1>🚛 Radar emploi — Thomas</h1>
-  <p>Dernière mise à jour : <strong>02/11/2026 à 12:56</strong></p>
+  <p>Dernière mise à jour : <strong>03/11/2026 à 12:27</strong></p>
   <p style="margin-top:6px;">Lorette 42420 + 25 km • Cariste, logistique, agroalimentaire</p>
 </header>
 
@@ -130,14 +130,32 @@ footer {
 <div id="offres-container"></div>
 
 <footer>
-  Radar emploi v3 · GitHub Actions · 02/11/2026 à 12:56<br>
+  Radar emploi v3 · GitHub Actions · 03/11/2026 à 12:27<br>
   Données : France Travail + Indeed
 </footer>
 
 <div class="toast" id="toast"></div>
 
 <script>
-const OFFRES = [];
+const OFFRES = [
+  {
+    "titre": "Cariste (H/F)",
+    "entreprise": "Domino RH - Missions Annonay",
+    "ville": "38 - Salaise-sur-Sanne",
+    "code_postal": "38150",
+    "type_contrat": "Intérim - 18 Mois",
+    "description": "Domino RH Annonay recherche un(e) Cariste H/F pour l'un de ses clients situé aux alentours de Salaise.\n\nVous souhaitez intégrer un environnement industriel et mettre vos compétences en conduite de chariots au service d'une nouvelle équipe ? Cette opportunité peut vous intéresser !\n\nVos missions :\n\n- Assurer le chargement et le déchargement des camions\n- Effectuer le déplacement et le stockage des marchandises\n- Approvisionner les différents secteurs de l'entreprise\n- Assurer le rangement et l'organisation des stocks\n- Contrôler les marchandises et leur conformité\n- Veiller au respect des consi",
+    "url": "https://candidat.francetravail.fr/offres/recherche/detail/8473902",
+    "source": "francetravail",
+    "score": 3,
+    "distance_km": 0.0,
+    "tags": [
+      "+cariste"
+    ],
+    "candidature": "Bonjour,\n\nSuite à votre offre de Cariste (H/F) chez Domino RH - Missions Annonay, je vous propose ma candidature.\nJe suis cariste CACES 3 avec plusieurs années d'expérience en environnement\nlogistique et industriel : conduite de chariot, chargement et déchargement\nde camions, préparation de commandes, picking et palettisation. Mes dernières\nmissions chez FIT (Heyrieux) et Plast Moul (Bourgoin-Jallieu) m'ont permis de\ntravailler dans le respect strict des consignes de sécurité.\n\nDisponible immédiatement, basé à Lorette, je peux intervenir rapidement sur 38 - Salaise-sur-Sanne.\nMon CV est joint, je reste à votre disposition pour échanger.\n\nCordialement",
+    "date_publication": "2026-11-02T14:32:35.930Z"
+  }
+];
 const STORAGE_KEY = 'radar_emploi_etats';
 
 // Charger les états (vu/intéressé/postulé) depuis localStorage
